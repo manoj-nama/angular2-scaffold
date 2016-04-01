@@ -4,7 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Angular2 Seed</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">    
+</head>
+<body>
+	<app>
+		The Angular2 app is loading
+	</app>
 
+	<!-- Insert dependencies in order -->
 	<script src="node_modules/es6-shim/es6-shim.min.js"></script>
 	<script src="node_modules/systemjs/dist/system-polyfills.js"></script>
 	<script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>   
@@ -14,6 +20,7 @@
 	<script src="node_modules/rxjs/bundles/Rx.js"></script>
 	<script src="node_modules/angular2/bundles/angular2.dev.js"></script>
 
+	<!-- Set up SystemJS -->
 	<script>
     System.config({
 			packages: {        
@@ -26,10 +33,6 @@
     System.import('app/main')
 			.then(null, console.error.bind(console));
 	</script>
-</head>
-<body>
-	<app>
-		The Angular2 app is loading
-	</app>
+
 </body>
 </html>
