@@ -1,23 +1,53 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 	font-size: 100%;
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
+	margin: 10px;
+	height: calc(100% - 20px);
 	font-family: Helvetica, arial, sans-serif;
+	border: 2px dashed #ddd;
+	position: relative;
 }
 
 app {
 	display: block;
 	width: 90%;
+	border: 2px dashed #ddd;
+	position: relative;
+	padding: 1rem;
 	max-width: 600px;
-	margin: 0 auto;
+	min-height: 350px;
+	margin: 4rem auto 0 auto;
+}
+
+body::before, app::before {
+	position: absolute;
+	content: "app/main.ts";
+	left: 10px;
+	top: -2px;
+	font-family: monospace;
+	display: inline-block;
+	padding: 5px 10px;
+	font-size: 0.9rem;
+	color: #fff;
+	border-radius: 0 0 3px 3px;
+	background-color: rgb(25,118,210);
+}
+app::before {
+	content: "app/components/app.component.ts";
 }
 
 app h1 {
 	font-size: 3.3rem;
-	margin: 6rem 0 2rem 0;
+	margin: 4rem 0 2rem 0;
 	color: #444;
 }
 
