@@ -4,7 +4,7 @@
 
 ---
 
-1. Install `[nodejs](https://nodejs.org/en/)` (_if not already have_)
+1. Install `nodejs` from https://nodejs.org/en/ (_if not already installed_)
 2. Clone this seed project (`git clone git@github.com:manoj-nama/angular2-seed.git`)
 3. `cd` into the project folder
 4. Install dependencies using `npm install` from the project root directory
